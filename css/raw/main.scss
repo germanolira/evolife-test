@@ -1,0 +1,158 @@
+body {
+    @media (min-width: 992px) {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        float: left;
+    }
+}
+
+main {
+    margin: 0 auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    // featured
+    .featured {
+        padding: 210px 0 20px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        &__image {
+            
+            max-width: 180px;
+            // max-width: 315px;
+            margin: 0 auto;
+            
+
+            img {
+                width: 100%;
+                border-radius: 200px;
+                overflow: hidden;
+                border: 6px solid #F1C523;
+            }
+        }
+
+        &__info {
+            max-width: 190px;
+            margin: 0 auto;
+
+            img {
+                max-width: 170px;
+
+                &:nth-child(2){
+                    max-width: 190px;
+                    margin: 5px auto;
+                }
+
+                &:nth-child(3){
+                    max-width: 100px
+                }
+            }
+        }
+    }
+
+    // buttons
+    .buttons {
+        
+        img {
+            border-radius: 99px;
+            box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 1)
+        }
+
+        &__whatsapp {
+            max-width: 75px;
+            margin: 0 auto 30px;
+            display: block;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__list {
+            list-style: none;
+            display: table;
+            margin: -20px auto 0;
+            padding: 0 0 80px;
+
+            li {
+                display: inline-block;
+                max-width: 60px;
+                margin: 0 5px;
+                img {
+                    max-width: 100%;
+
+                }
+            }
+        }
+    }
+
+    // click
+    .click {
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+
+        img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+
+    @media (min-width: 768px) {
+        .featured {
+            padding: 300px 0 0;
+            &__image {
+                max-width: 360px;
+            }
+
+            &__info {
+                margin: 0 auto 20px;
+            }
+        }
+
+        .buttons {
+            &__whatsapp {
+                max-width: 110px;
+            }
+
+            &__list {
+                padding: 0 0 120px;
+                li {
+                    max-width: 85px;
+                }
+            }
+        }
+
+    }
+
+    @media (min-width: 992px) {
+        width: 100%;
+        max-width: 540px;
+        min-height: initial;
+        max-height: 940px;
+
+        .featured {
+            padding: 200px 0 0;
+            &__image {
+                max-width: 315px;
+            }
+        }
+
+        .buttons {
+            &__list {
+                padding: 0 0 80px;
+            }
+        }
+    }
+
+}
